@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --main : hsl(4, 100%, 67%);
+    --dark_s:  hsl(234, 29%, 20%);
+    --charc:hsl(235, 18%, 26%);
+    --p_grey : hsl(231, 7%, 60%) ;
+    --p_white: hsl(0, 0%, 100%);
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--charc);
+    font-family: 'Roboto', sans-serif;  
+
+}
+
+.main_box{
+    width:60vw;
+    height: 600px;
+    background-color: red;
+    border-radius: 35px;
+    background: var(--p_white);
+    display: flex;
+    gap: 85px;
+    padding: 20px;
+    justify-content:space-around;
+}
+
+.main_box_left{
+    display: flex;
+    flex-direction: column;
+    padding-top:10%;
+}
+.main_box_left_title{
+    font-weight: 800;
+    font-size: 3.8rem;
+    padding-bottom: 1rem;
+    color: var(--dark_s);
+}
+.main_box_left_first_p{
+    padding-bottom:5% ;
+    font-family: 400;
+    color: var(--dark_s);
+    line-height: 20px;
+  
+}
+.list{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ margin-bottom: 2rem;
+  
+}
+.list > li > span{
+    margin-right: 10px;
+}
+
+.main_box_email{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-top: 20px;
+}
+label{
+    font-weight: 800;
+    font-size: 0.8rem;
+    
+}
+
+.input{
+    margin-top: 10px;
+    
+}
+
+.input input{
+    width: 100%;
+    height: 35px;
+    border: 1px rgba(0, 0, 0, 0.151) solid;
+
+}
+.input input:active{
+    border: 1px solid red;
+}
+
+.btn button{
+    width: 100%;
+    padding: 0.9rem 0 0.9rem 0;
+   border-radius: 7px;
+   background-color: var(--charc);
+   color: var(--p_white);
+   cursor: pointer;
+   transition: all 0.5s;
+   border: none;
+   filter: drop-shadow(5px 5px 10px #0000007e);
+
+}
+.btn button:hover{
+background: rgb(218,45,165);
+background: linear-gradient(90deg, rgba(218,45,165,1) 3%, rgba(215,161,22,1) 97%);
+}
+
+@media screen and (max-width: 1223px) {
+ 
+    .main_box{
+        flex-direction: column;
+        width: 100vw ;
+        height: max-content ;
+        padding: 0 ;
+        gap: 0 ;
+        border-radius: 0px ;
+       justify-content: flex-start;
+       
+    }
+    .main_box_left{
+        order: 2;
+    }
+  .desktop{
+    display: none;
+   }
+   html{
+    font-size: 60%;
+   }
+   .main_box_left{
+   
+    padding-top:0% ;
+}
+.input input{
+    width: 100%;
+
+
+}
+  .main_box_left{
+  padding: 30px;
+}
+.mobile{
+        width: 100vw;
+    }
+}
+@media screen and (min-width:1223px){
+    .mobile{
+        display: none;
+    }
+    
+}
+
+
+.invalid {
+    background:rgba(255, 0, 0, 0.418);
+}
+.email_valid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valid{
+    color: red;
+}
+
+.none{
+    display: none;
+}
+dialog{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark_s);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.model_class{
+    width: 300px;
+    height: max-content;
+    background-color: var(--p_white);
+    border-radius: 25px;
+    padding: 20px;
+}
+.thanks{
+    font-size: 2.5rem;
+    padding: 2rem 0 2rem 0;
+ 
+}
+
+.email-conf{
+    margin-bottom: 2rem;
+}
