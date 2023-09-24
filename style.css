@@ -205,7 +205,7 @@ dialog{
 
 
 
-@media screen and (max-width: 1223px) {
+@media screen and (max-width: 900px) {
     
     .main_box{
         flex-direction: column;
@@ -247,11 +247,25 @@ dialog{
        
     }
 }
-@media screen and (min-width:1223px){
+@media screen and (min-width:900px){
     .mobile{
         display: none;
     }
     
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px)  {
+.main_box{
+    width:90vw;
+    height: 600px;
+    background-color: red;
+    border-radius: 35px;
+    background: var(--p_white);
+    display: flex;
+    gap: 85px;
+    padding: 20px;
+    justify-content:space-around;
+}
 }
 
   .list li{
