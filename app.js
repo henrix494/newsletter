@@ -24,6 +24,7 @@ btn.addEventListener('click', () => {
         valid.classList.add(`none`)
         favDialog.showModal();
         favDialog.classList.remove(`none`)
+        emailP.classList.add("emailA")
         emailP.textContent = emailValue
     }
 
