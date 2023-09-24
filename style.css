@@ -153,49 +153,6 @@ background: rgb(218,45,165);
 background: linear-gradient(90deg, rgba(218,45,165,1) 3%, rgba(215,161,22,1) 97%);
 }
 
-@media screen and (max-width: 1223px) {
- 
-    .main_box{
-        flex-direction: column;
-        width: 100vw ;
-        height: max-content ;
-        padding: 0 ;
-        gap: 0 ;
-        border-radius: 0px ;
-       justify-content: flex-start;
-       
-    }
-    .main_box_left{
-        order: 2;
-    }
-  .desktop{
-    display: none;
-   }
-   html{
-    font-size: 60%;
-   }
-   .main_box_left{
-   
-    padding-top:0% ;
-}
-.input input{
-    width: 100%;
-
-
-}
-  .main_box_left{
-  padding: 30px;
-}
-.mobile{
-        width: 100vw;
-    }
-}
-@media screen and (min-width:1223px){
-    .mobile{
-        display: none;
-    }
-    
-}
 
 
 .invalid {
@@ -239,8 +196,65 @@ dialog{
 
 .email-conf{
     margin-bottom: 2rem;
+    line-height: 18px;
 }
 
 #emailA{
     font-weight: 800;
 }
+
+
+
+@media screen and (max-width: 1223px) {
+    
+    .main_box{
+        flex-direction: column;
+        width: 100vw ;
+        
+        padding: 0 ;
+        gap: 0 ;
+        border-radius: 0px ;
+        justify-content: flex-start;
+       
+    }
+    .main_box_left{
+        order: 2;
+       
+    }
+  
+  .desktop{
+    display: none;
+   }
+   html{
+    font-size: 80%;
+    background-color: white;
+  display: inline;
+   }
+   .main_box_left{
+   
+    padding-top:0% ;
+}
+.input input{
+    width: 100%;
+
+
+}
+  .main_box_left{
+  padding: 30px;
+}
+.mobile{
+        width: 100vw ;
+       
+    }
+}
+@media screen and (min-width:1223px){
+    .mobile{
+        display: none;
+    }
+    
+}
+
+  .list li{
+        display: flex ;
+        align-items: center;
+    }
