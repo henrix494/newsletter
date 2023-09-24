@@ -240,3 +240,7 @@ dialog{
 .email-conf{
     margin-bottom: 2rem;
 }
+
+#emailA{
+    font-weight: 800;
+}
